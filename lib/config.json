@@ -1,0 +1,5 @@
+{
+  "actionPath": "./actions",
+  "urlFirstField": "action",
+  "port": 8000
+}
