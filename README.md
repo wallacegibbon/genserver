@@ -47,6 +47,9 @@ genserver
 You can change the query argument to see the result.
 
 
+The function you write can be `async` function, you can see `test/actions/playasync.js` for more details.
+
+
 ## Configuration
 
 ### TCP Port
