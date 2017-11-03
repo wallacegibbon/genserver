@@ -73,35 +73,9 @@ By default, the action path is "actions", you can change it through `genconfig.j
 ```json
 {
   "port": 9000,
-  "userActionPath": "/tmp/myactions"
+  "actionPath": "/tmp/myactions"
 }
 ```
-
-### Url
-
-You can change the url prefix for actions, for example, if you want to use name "controller" instead of "action", you can change the `genconfig.json` to this:
-
-```json
-{
-  "port": 9000,
-  "userActionPath": "/tmp/myactions",
-  "urlFirstField": "controller"
-}
-```
-
-Now you need to change url to: http://localhost:9000/controller/blah?cmd=blah&a=b
-
-Or you don't want the prefix at all, you can change "urlFirstField" to null like this:
-
-```json
-{
-  "port": 9000,
-  "userActionPath": "/tmp/myactions",
-  "urlFirstField": null
-}
-```
-
-Now you need to change url to: http://localhost:9000/blah?cmd=blah&a=b
 
 
 Have fun !
