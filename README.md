@@ -41,19 +41,19 @@ EOF
 genserver
 ```
 
-4. Open the link in browser: http://localhost:8000/action/blah?cmd=blah&a=b
+4. Open the link in browser: http://localhost:8000/blah?cmd=blah&a=b
 
 
 You can change the query argument to see the result.
 
 
-The function you write can be `async` function, you can see `test/actions/playasync.js` for more details.
+The function you write can be `async` function, you can see `test/a/actions/playasync.js` for more details.
 
 
 ## Configuration
 
 ### TCP Port
-If you don't want the default configuration, for example, you want to change the tcp port to be listened, you can create your own configuration json file to overwrite the default configuration. The file name has to be `genconfig.json`.
+If you don't want the default configuration, for example, you want to change the tcp port to be listened, you can create your own configuration file to overwrite the default configuration. The file name has to be `genconfig.json`.
 
 Let's just use the example above, you need to create a `genconfig.json` in the project directory, in this example, it's "/tmp/testgenserver", so let's write this to `/tmp/testgenserver/genconfig.json`:
 
@@ -63,7 +63,7 @@ Let's just use the example above, you need to create a `genconfig.json` in the p
 }
 ```
 
-Then restart the server, it will listen port 9000 instead of 8000 now. Check it out: http://localhost:9000/action/blah?cmd=blah&a=b
+Then restart the server, it will listen port 9000 instead of 8000 now. Check it out: http://localhost:9000/blah?cmd=blah&a=b
 
 
 ### Action Path
