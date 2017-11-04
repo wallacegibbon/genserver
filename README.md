@@ -68,12 +68,12 @@ Then restart the server, it will listen port 9000 instead of 8000 now. Check it 
 
 ### Action Path
 
-By default, the action path is "actions", you can change it through `genconfig.json`. You can even use a directory outside the project directory:
+By default, the action path is "actions", you can change it through `genconfig.json`.
 
 ```json
 {
   "port": 9000,
-  "actionPath": "/tmp/myactions"
+  "actionPath": "./myactions"
 }
 ```
 
