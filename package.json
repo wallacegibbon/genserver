@@ -1,7 +1,7 @@
 {
   "name": "genserver",
   "description": "A generic purposed JSON api server",
-  "version": "0.7.6",
+  "version": "0.7.7",
   "author": {
     "name": "Wallace Gibbon",
     "email": "wallacegibbon@aliyun.com"
@@ -24,8 +24,8 @@
     "start": "node lib/start.js"
   },
   "dependencies": {
-    "koa": "^2.3.0",
-    "lvlog": "^3.0.0"
+    "colourlogger": "^1.0.0",
+    "koa": "^2.3.0"
   },
   "engines": {
     "node": ">=8.0"
