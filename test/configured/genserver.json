@@ -1,0 +1,6 @@
+{
+  "port": 9000,
+  "actionPath": "./a",
+  "disableLogColor": true,
+  "userMiddleware": "./b/filter.js"
+}
