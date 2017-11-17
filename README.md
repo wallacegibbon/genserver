@@ -5,8 +5,8 @@
 
 Before using genserver, you need to install it first. The installation process
 is simple, only 2 parts:
-1. Install Node.js (>= version 8).
-2. Install genserver as global package: npm install -g genserver
+1. Install Node.js (version 7 at least, for async/await support).
+2. Install genserver as global package: `npm i -g genserver`
 
 Now you can use it. In the following example, all commands are supposed to be executed in a Linux/MacOS terminal.
 
@@ -23,7 +23,6 @@ mkdir actions
 
 ```sh
 cat > actions/blah.js << EOF
-
 function blah(args) {
   return Object.assign(args, { "info": "Wow, this is so simple!" });
 }
@@ -53,14 +52,19 @@ The function you write can be `async` function, you can see `test/a/actions/play
 ## Configuration
 
 ### TCP Port
-If you don't want the default configuration, for example, you want to change the tcp port to be listened, you can create your own configuration file to overwrite the default configuration. The file name has to be `genconfig.json`.
 
-Let's just use the example above, you need to create a `genconfig.json` in the project directory, in this example, it's "/tmp/testgenserver", so let's write this to `/tmp/testgenserver/genconfig.json`:
+If you don't want the default configuration, for example, you want to change the tcp port to be listened, you can create your own configuration file to overwrite the default configuration. The file name has to be `genserver.json`.
 
-```json
+Let's just use the example above, you need to create a `genserver.json` in the project directory, in this example, it's "/tmp/testgenserver".
+
+You can use the following script to create a configuration file:
+
+```sh
+cat > genserver.json << EOF
 {
   "port": 9000
 }
+EOF
 ```
 
 Then restart the server, it will listen port 9000 instead of 8000 now. Check it out: http://localhost:9000/blah?cmd=blah&a=b
@@ -68,7 +72,7 @@ Then restart the server, it will listen port 9000 instead of 8000 now. Check it 
 
 ### Action Path
 
-By default, the action path is "actions", you can change it through `genconfig.json`.
+By default, the action path is "actions", you can change it by editing `genserver.json` to this:
 
 ```json
 {
@@ -76,6 +80,11 @@ By default, the action path is "actions", you can change it through `genconfig.j
   "actionPath": "./myactions"
 }
 ```
+
+
+### Other Configurations
+
+You can also configure genserver to disable log, disable log color, or something else. More configurable options are being added, and there will always be some examples in the `test` directory in genserver package.
 
 
 Have fun !
