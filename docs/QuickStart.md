@@ -1,7 +1,4 @@
-# Generic Purposed JSON API Server
-
-
-## Quick Start
+## Preparations
 
 Before using genserver, you need to install it first. The installation process
 is simple, only 2 parts:
@@ -10,6 +7,8 @@ is simple, only 2 parts:
 
 Now you can use it. In the following example, all commands are supposed to be executed in a Linux/MacOS terminal.
 
+
+## Example
 
 1. Swith to an empty directory, create a directory named "actions". You can simply run the following commands:
 
@@ -49,7 +48,8 @@ You can change the query argument to see the result.
 The function you write can be `async` function, you can see `test/a/actions/playasync.js` for more details.
 
 
-## Configuration
+
+## Configurations
 
 ### TCP Port
 
