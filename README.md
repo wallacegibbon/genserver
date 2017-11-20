@@ -18,7 +18,7 @@ With `genserver`, you can write server program as simple as writing a normal fun
 
 The client send request in a certain format like *http://myserver.com/myfile?cmd=myfunction&arg1=1&arg2=2*, then function `myfunction` in `myfile.js` will get called. (Of course you need to make some configurations to tell genserver where to find the file)
 
-It's just like calling `myfunction({ arg1: 1, arg2: 2 })`. And the result returned by `myfunction` will be stringify and return to client. All you need to do is write the `myfunction`.
+It's just like calling `myfunction({ arg1: 1, arg2: 2 })`. And the result returned by `myfunction` will be returned to client. All you need to do is write the `myfunction`.
 
 So when you want to write a web service, you can just write the core functions and test them. After that, start genserver, it becomes a webservice! You don't need to learn any web framework, you don't even need to know HTTP.
 
