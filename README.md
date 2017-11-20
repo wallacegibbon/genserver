@@ -28,5 +28,5 @@ So when you want to write a web service, you can just write the core functions a
 
 I've seen many server programs handling errors in a clumsy way: when error occurs, they do some log, set response context, set response code, then call response functions... And when they want to return an error, they do it in the same way, log, set code, set context, ...
 
-With `genserver`, you don't need to do anything when error occurs, it will be caught, formatted, and return to client in JSON format. And when you want to response an error, you just need to throw it! Just like what you did in normal programs. `genserver` will do all the necessary things underground.
+With `genserver`, you don't need to do anything when error occurs, it will be caught, formatted, and return to client in JSON format (You can write your own error handler to overwrite the default one). And when you want to response an error, you just need to throw it! Just like what you did in normal programs. `genserver` will do all the necessary things underground.
 
