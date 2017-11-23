@@ -3,5 +3,6 @@
   "actionPath": "./a",
   "disableLogColor": true,
   "filter": "./b/filter.js",
-  "errorHandler": "./b/e.js"
+  "errorHandler": "./b/e.js",
+  "emitError": true
 }
