@@ -1,6 +1,8 @@
-function errorHandler(e) {
-  return `<${e.name}> ${e.message} ;)`;
-  //return 1;
+function errorHandler(e, ctx) {
+  if (ctx.query.cmd)
+    return `${e.message} (${ctx.query.cmd}) ;)`;
+  else
+    return null;
 }
 
 
