@@ -1,6 +1,5 @@
 {
   "port": 9000,
   "actionPath": "./a",
-  "filter": "./b/filter.js",
   "errorHandler": "./b/e.js"
 }

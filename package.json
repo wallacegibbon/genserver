@@ -1,7 +1,7 @@
 {
   "name": "genserver",
   "description": "A generic purposed JSON api server",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "author": {
     "name": "Wallace Gibbon",
     "email": "wallacegibbon@aliyun.com"
