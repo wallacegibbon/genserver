@@ -84,7 +84,7 @@ By default, the action path is "actions", you can change it by editing `genserve
 
 ### Other Configurations
 
-You can also configure genserver to disable log, disable log color, or something else. More configurable options are being added, and there will always be some examples in the `test` directory in genserver package.
+There are some configurations not mention above, for example, you can configure genserver to use external logger(e.g. log4js). There are some examples in the `test` directory in genserver package.
 
 
 Have fun !

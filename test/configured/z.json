@@ -1,5 +1,7 @@
 {
   "port": 9000,
   "actionPath": "./a",
-  "errorHandler": "./b/e.js"
+  "errorHandler": "./b/e.js",
+  "logModule": "./b/log.js",
+  "showStartupInfo": false
 }
